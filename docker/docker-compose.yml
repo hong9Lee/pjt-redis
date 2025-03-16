@@ -8,6 +8,15 @@ services:
     networks:
       - redis-net
 
+  redisinsight:
+    image: redis/redisinsight:latest
+    container_name: redis-insight
+    ports:
+      - "8001:8001"  # 웹 UI 접근 포트
+    networks:
+      - redis-net
+    restart: unless-stopped
+
 networks:
   redis-net:
     driver: bridge
