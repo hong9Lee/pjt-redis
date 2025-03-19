@@ -28,6 +28,8 @@ class RedisConfig(
             connectionFactory = redisConnectionFactory
             keySerializer = StringRedisSerializer()
             valueSerializer = StringRedisSerializer()
+            hashKeySerializer = StringRedisSerializer()
+            hashValueSerializer = StringRedisSerializer()
         }
     }
 
