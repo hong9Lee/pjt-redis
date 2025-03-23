@@ -1,6 +1,11 @@
 # 다시 한번 정리하는 Redis  
+<details markdown="1">
+<summary> 
 
-## 1. 자료구조  
+#### ***1. 자료 구조***  </summary>  
+
+ 
+## 자료구조  
 - String
 ```
 최대 512MB 크기의 값을 저장 가능  
@@ -111,6 +116,19 @@ Kafka와 유사한 메시징 시스템
 ```
 
 
+</details>  
+
+
+
+
+
+<details markdown="1">
+<summary> 
+
+#### ***2. 메모리 관리***  </summary>  
+
+
+
 ## 2. 레디스의 메모리 관리  
 
 레디스는 In-memory형 데이터 베이스이다.   
@@ -199,6 +217,13 @@ Redis는 데이터를 저장할 때 메모리 블록을 할당받는데, 크기�
 
 
 ```
+</details>  
+
+
+<details markdown="1">
+<summary> 
+
+#### ***3. 레디스 구조***  </summary>  
 
 ## 3. 레디스 구조    
 Master-Replica는 데이터를 복제(Replication)하여 가용성과 읽기 성능을 높이는 구조.    
@@ -233,7 +258,7 @@ Cluster(샤딩) 은 데이터를 분산(Sharding)하여 하나의 노드에 너�
 Redis는 기본적으로 싱글 스레드(Single Thread) 기반으로 동작하기 때문에,  
 처리 시간이 오래 걸리는 명령어(O(N) 이상)를 실행하면 전체 성능이 저하될 위험이 있음.  
 해당 작업이 끝날 때까지 Redis가 다른 요청을 처리할 수 없기 때문이다.  
-
+</details>  
 
 
 
