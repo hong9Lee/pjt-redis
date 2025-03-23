@@ -1,4 +1,35 @@
 # 다시 한번 정리하는 Redis  
+
+<details markdown="1">
+<summary> 
+ 
+#### ***캐시 스템피드 테스트***  </summary>  
+
+<img width="694" alt="스크린샷 2025-03-23 오후 5 54 21" src="https://github.com/user-attachments/assets/0aae417d-470f-4846-bf3b-fcfc97d4b260" />
+
+-- TODO  
+테스트 시나리오
+1. 캐시 전략 적용 (Look Aside)  
+2. TTL 만료 시 여러 요청이 DB에 몰리도록 설계  
+3. 솔루션 탐색 및 기록  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</details>
+
+
 <details markdown="1">
 <summary> 
 
