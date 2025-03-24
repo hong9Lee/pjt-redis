@@ -33,7 +33,7 @@ class CampaignConditionEntity(
 
     @Column(name = "required_previous_ads")
     @Convert(converter = ListStringConverter::class)
-    private val requiredPreviousAds: List<String>,
+    private val requiredPreviousAds: List<String>
 ) : BaseTimeEntity() {
 
     fun toDomain(): CampaignCondition {

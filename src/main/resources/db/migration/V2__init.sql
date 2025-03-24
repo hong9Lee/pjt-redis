@@ -1,0 +1,3 @@
+INSERT INTO local.campaign (seq, campaign_id, name, max_count, start_date_time, end_date_time, reg_date_time, mod_date_time) VALUES (1, '123', '테스트 캠페인', 10, '2025-03-23 19:16:48.000000', '2025-03-30 19:16:49.000000', '2025-03-23 19:16:51.000000', null);
+INSERT INTO local.campaign_condition (seq, campaign_condition_id, campaign_id, first_time_only, min_participation, required_previous_ad, required_previous_ads, reg_date_time, mod_date_time) VALUES (1, '999', '123', 0, 0, 0, null, '2025-03-23 19:17:55.000000', null);
+INSERT INTO local.campaign_participation (seq, campaign_participation_id, campaign_id, max_participation, current_participation, reg_date_time, mod_date_time) VALUES (1, '999', '123', 10, 0, '2025-03-23 20:54:55.000000', null);
