@@ -1,8 +1,22 @@
 version: '3.8'
 services:
-  master:
+  rdb:
+    container_name: pjt-redis-mysql
+    image: mysql:8.0
+    ports:
+      - 3306:3306
+    volumes:
+      - ./db/initdb.d:/docker-entrypoint-initdb.d
+      - ./db/conf.d:/etc/mysql/conf.d
+    env_file: db/initdb.d/.env
+    environment:
+      TZ: Asia/Seoul
+    networks:
+      - redis-net
+
+  redis:
+    container_name: pjt-redis
     image: redis:latest
-    container_name: master
     ports:
       - "6379:6379"
     networks:
